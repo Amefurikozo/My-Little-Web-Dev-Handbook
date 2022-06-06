@@ -8,26 +8,55 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* Footer */
-/* Footer */
-/* Footer */
-#footer {
-    display: inline-flex;
+video{ 
+    display: block;
     width: 100%;
+    height: 100%;
+}
+
+.background {
+    height: 100%;
+}
+
+#banner{
+    height: 100%;
+}
+
+/* Footer */
+/* Footer */
+/* Footer */
+body {
+    height: 100%;
+    min-height:100vh; 
+    margin:0; 
+    position:relative;
+}
+
+#find-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     position: absolute;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    background-image: url(/assets/pictures/footer.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 550px;
+}
+
+#cat{
+    width: 3em;
+    height: auto;
+    align-self: center;
+    filter: invert(64%) sepia(8%) saturate(88%) hue-rotate(329deg) brightness(94%) contrast(89%)
+    drop-shadow(3px 0px 2px rgba(0, 0, 0, 0.5));
 }
 
 .icon:before {
     color: rgb(255, 255, 255);
     font-family: FontAwesome;
-    font-size: 32px;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    font-size: 36px;
+    /* text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5); */
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
     /* text-shadow: 0px 0px 3px rgba(255, 255, 255, 1); */
 }
 
@@ -37,10 +66,12 @@ ul.icons li {
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
     padding-left: 20px;
     padding-right: 20px;  
+    list-style: none;
 }
 
 .icons li:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
 }
 
 .icons {
@@ -50,26 +81,30 @@ ul.icons li {
     text-align: center;
     align-items: center;
     align-content: center;
-    width: 100%;
-    margin-right: 195px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    box-shadow: 0px 0px 7px black;
 }
 
 .label{
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5); */
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
     /* text-shadow: 0px 0px 3px rgba(255, 255, 255, 1); */
 }
 
 small {
-    display: flex;
+    /* display: flex;
     width: 220px;
+    justify-content: center;
     align-items: center;
     font-size: 12px;
     background-color: rgba(255, 255, 255, 0.2);
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
     color: #fff;
     padding-left: 6px;
-    text-align: center;
+    text-align: center; */
     /* border-top-right-radius: 20px;
     border-bottom-right-radius: 20px; */
 }
@@ -138,6 +173,7 @@ body nav ul #current-page {
 /* Content Styling */
 html {
     font-size: 12pt;
+    
 }
 
 body {
@@ -150,16 +186,34 @@ a {
     text-decoration: none;
 }
 
+#welcome{
+    display: block;
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
 .wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    align-content: flex-start;
+    top: 0;
+    left: 0;
+    right: 0;
 
-    width: 100%;
-    height: 700px;
-    margin: 0 auto;
+    margin-top: 150px;
+    position: absolute;
     text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.2);
 }
 
@@ -168,18 +222,20 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 375px;
-    height: 450px;
-    /* border-top-left-radius: 20px;
-    border-top-right-radius: 20px; */
+    width: 16em;
+    height: 22em;
+    border-radius: 20px;
     margin-top: 10px;
 }
 
 #info {
-    width: 380px;
-    height: 300px;
-    padding-top: 20px;
-    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    width: 420px;
+    height: 22em;
+    background-color: rgba(255, 255, 255, 1);
+    padding-top: 15px;
+    padding-left: 30px;
+    border-radius: 20px;
 }
 
 .my-name{
