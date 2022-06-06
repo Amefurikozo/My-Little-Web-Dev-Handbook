@@ -5,85 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
 </head>
 
 <body>
     <nav id='menu'>
         <ul>
-            <li><a href='About'>About me</a></li>
-            <li><a href='Bookmarks'>Bookmarks</a></li>
-            <li><a href='Tools'>Tools</a></li>
-            <li><a href='Extensions'>Extensions</a></li>
-            <li><a href='Lifestyle'>Lifestyle</a></li>
-            <li><a href='Lifestyle'>Blog</a></li>
+            <li><a id="current-page">About me</a></li>
+            <li><a href='bookmarks.html' disabled>Bookmarks</a></li>
+            <li><a href='tools.html'>Tools</a></li>
+            <li><a href='Extensions.html'>Extensions</a></li>
+            <li><a href='lifestyle.html'>Lifestyle</a></li>
+            <li><a href='blog.html'>Blog</a></li>
         </ul>
     </nav>
 
-    <hr>
-
     <div class="wrapper">
-
-        <div class="html">
-            <div class="html-image box-image">
-                <span>HTML</span>
-            </div>
-
-            <ul class="links">
-                <li><a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a></li>
-                <li><a href="https://internetingishard.netlify.app/html-and-css/semantic-html/index.html">Semantic HTML</a></li>
-            </ul>
-        </div>
-
-        <div class="css">
-            <div class="css-image box-image">
-                <span>CSS</span>
-            </div>
+        <div id="me"></div>
+        <span id="info">
+            <strong>Welcome to my page!</strong> 
+            <br>
+            My name is <span class="my-name">Charilaos Giannopoulos</span>.
+            <br>
+            I am a Junior Web Dev from the beautiful all blue & white Greece.
+            <br> 
+            You can call me <em>Harry</em> for ease.
+            <br><br>
+            <p>
+                ☕ Ask me about anything!
+            </p>
+            <br>
             
-            <ul class="links">
-                <div class="css-1">
-                    <button onclick="showLinks()">Learn the basics</button>
-                    <li><a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML & CSS</a></li>
-                    <li><a href="https://internetingishard.netlify.app/html-and-css/index.html">HTML & CSS is hard (not)</a></li>
-                </div>
+            <table>
+                <tr id="heading">
+                    <td>Current skills</td>
+                    <td>In progress</td>  
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>React</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Mongo DB</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>Figma & Photoshop</td>
+                </tr>
+                <tr>
+                    <td>Googling</td>
+                    <td>Optimization & Accessibility</td>
+                </tr>    
+            </table>
 
-                <div class="css-2">
-                    <button onclick="showLinks()">Attributes, Selectors & Pseudo-classes</button>
-                    <li><a href="https://css-tricks.com/attribute-selectors/">CSS attribute selectors</a></li>
-                    <li><a href="https://www.webfx.com/blog/web-design/link-pseudo-classes/">CSS link pseudo-classes</a></li>
-                </div>
-
-                <div class="css-3">
-                    <button onclick="showLinks()">Positioning, Flexbox and Grid</button>
-                    <li><a href="https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/">How to center anything with CSS</a></li>
-                    <li><a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/">Learn CSS positioning in ten steps</a></li>
-                    <li><a href="https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_grid">CSS grid</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">Basic concepts of grid layout</a></li>
-                    <li><a href="https://gridbyexample.com/video/">Grid layout video series</a></li>
-                </div>
-
-                <div class="css-4">
-                    <button onclick="showLinks()">Responsive Designs</button>
-                    <li><a href="https://web.dev/learn/design/">Learn responsive design</a></li>
-                </div>
-
-            </ul>
-        </div>
-    
-        <div class="javascript">
-            <div class="javascript-image box-image">
-                <span>JS</span>
-            </div>
-
-            <ul class="links">
-                
-            </ul>
-        </div>
+        </span>
     </div>
     
     <br><br><br>
-    <footer class="footer">
-        <small>Personal Portfolio Webpage <br> Created by Charilaos Giannopoulos</small>
+    <footer id="footer">
+        <small>Personal Portfolio <br> By Charilaos Giannopoulos</small>
         <ul class="icons">
             <li><a href="https://github.com/Amefurikozo" class="icon fa-github"><br><span class="label">Github</span></a></li>
             <li><a href="https://www.linkedin.com/in/charilaos-giannopoulos/" class="icon fa-linkedin"><br><span class="label">Linkedin</span></a></li>
