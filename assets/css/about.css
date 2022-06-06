@@ -23,8 +23,6 @@ video{
 }
 
 /* Footer */
-/* Footer */
-/* Footer */
 body {
     height: 100%;
     min-height:100vh; 
@@ -40,30 +38,26 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    margin-top: 550px;
+    margin-top: 530px;
 }
 
 #cat{
     width: 3em;
     height: auto;
     align-self: center;
-    filter: invert(64%) sepia(8%) saturate(88%) hue-rotate(329deg) brightness(94%) contrast(89%)
-    drop-shadow(3px 0px 2px rgba(0, 0, 0, 0.5));
+    filter: invert(10%) sepia(8%) saturate(88%) hue-rotate(329deg) brightness(94%) contrast(89%);
 }
 
 .icon:before {
     color: rgb(255, 255, 255);
     font-family: FontAwesome;
     font-size: 36px;
-    /* text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5); */
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
-    /* text-shadow: 0px 0px 3px rgba(255, 255, 255, 1); */
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
 ul.icons li {
     padding: 10px;
-    /* text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5); */
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
     padding-left: 20px;
     padding-right: 20px;  
     list-style: none;
@@ -82,35 +76,16 @@ ul.icons li {
     align-items: center;
     align-content: center;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(69, 69, 69, 0.3);
     border-radius: 12px;
     box-shadow: 0px 0px 7px black;
 }
 
 .label{
     color: rgb(255, 255, 255);
-    /* text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5); */
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
-    /* text-shadow: 0px 0px 3px rgba(255, 255, 255, 1); */
 }
 
-small {
-    /* display: flex;
-    width: 220px;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    background-color: rgba(255, 255, 255, 0.2);
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding-left: 6px;
-    text-align: center; */
-    /* border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px; */
-}
-
-/* Navigation Bar */
-/* Navigation Bar */
 /* Navigation Bar */
 #menu {
     display: grid;
@@ -121,7 +96,6 @@ small {
 	padding-left: 18px;
 	border-radius: 0px;
     margin: 0 auto;
-    /* box-shadow:  0px 0px 2px black; */
 }
 
 #menu ul, #menu li {
@@ -168,8 +142,6 @@ body nav ul #current-page {
     cursor: default;
 }
 
-/* Content Styling */
-/* Content Styling */
 /* Content Styling */
 html {
     font-size: 12pt;
