@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Charilaos Giannopoulos" content="About me info" />
+    <meta name="Charilaos Giannopoulos Web Developer" content="About me info" />
     <title>About me!</title>
     <link rel="stylesheet" href="assets/css/about.css"/>
-    <link rel="shortcut icon" type="image/svg" href="assets/svg/about-favi.svg"/>
+    <link rel="shortcut icon" type="image/svg" href="assets/favi/about-favi.svg"/>
 </head>
+
+<style>
+    body{
+        background-image: url(/assets/pictures/bg.png); 
+        background-repeat: no-repeat;
+        
+
+        display: block;
+        width: 100%;
+        height: auto;
+        
+        position: fixed;
+        z-index: -1;
+    }
+</style>
 
 <body>
 
@@ -17,15 +32,13 @@
             <li><a id="current-page">About me</a></li>
             <li><a href="bookmarks.html" disabled>Bookmarks</a></li>
             <li><a href="tools.html">Tools</a></li>
-            <li><a href="Extensions.html">Extensions</a></li>
-            <li><a href="lifestyle.html">Lifestyle</a></li>
             <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
 
     <div id="banner">
         <div class="background">
-            <video autoplay="" loop="" muted="">
+            <video autoplay="" loop="" muted="" id="about-me-bg">
                 <source src="/assets/video/banner.mp4" type="video/mp4">
             </video>
         </div>
@@ -71,18 +84,18 @@
                 </tr>    
             </table>
         </span>
+        <br>
+        <div id="find-me">
+            <img src="/assets/pictures/cat.png" alt="" id="cat">
+            <ul class="icons">
+                <li><a href="https://github.com/Amefurikozo" class="icon fa-github"><br><span class="label">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/charilaos-giannopoulos/" class="icon fa-linkedin"><br><span class="label">Linkedin</span></a></li>
+                <li><a href="https://www.instagram.com/betweenwinds/" class="icon fa-instagram"><br><span class="label">Instagram</span></a></li>
+                <li><a href="mailto: webdevcharilaosg" class="icon fa-envelope-o"><br><span class="label">Email</span></a></li>
+            </ul>
+        </div>
     </div>
     
-    <div id="find-me">
-        <img src="/assets/pictures/cat.png" alt="" id="cat">
-        <ul class="icons">
-            <li><a href="https://github.com/Amefurikozo" class="icon fa-github"><br><span class="label">Github</span></a></li>
-            <li><a href="https://www.linkedin.com/in/charilaos-giannopoulos/" class="icon fa-linkedin"><br><span class="label">Linkedin</span></a></li>
-            <li><a href="https://www.instagram.com/betweenwinds/" class="icon fa-instagram"><br><span class="label">Instagram</span></a></li>
-            <li><a href="mailto: webdevcharilaosg" class="icon fa-envelope-o"><br><span class="label">Email</span></a></li>
-        </ul>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
