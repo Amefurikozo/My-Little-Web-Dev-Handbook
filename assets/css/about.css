@@ -32,10 +32,6 @@
 }
 
 @media (max-width: 767px) {
-    #about-me-bg {
-        display: none;
-    }
-
     body .wrapper{
         display: flex;
         flex-direction: column;
