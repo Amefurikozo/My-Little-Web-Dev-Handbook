@@ -57,8 +57,8 @@ body::after {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color:  rgb(46, 44, 44);
-    background-image: url(/assets/pictures/footer.jpg);
+    background-color:  rgba(58, 47, 43, 0.6);
+    background-image: url(/assets/pictures/footer-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -69,7 +69,7 @@ body::after {
     color: rgb(255, 255, 255);
     font-family: FontAwesome;
     font-size: 18px;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 ul.icons li {
@@ -97,7 +97,7 @@ ul.icons li {
 
 .label{
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 small {
@@ -164,7 +164,6 @@ small {
 body nav ul #current-page {
     background-color: rgba(58, 47, 43, 0.6);
     color: white;
-    cursor: default;
 }
 
 /* Button for links */
@@ -233,7 +232,7 @@ a {
 }
 
 .html-image {
-    background-image: url(../pictures/html.jpg);
+    background-image: url(/assets/pictures/html-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -242,13 +241,22 @@ a {
 }
 
 .css-image {
-    background-image: url(../pictures/css.jpg);
+    background-image: url(/assets/pictures/css-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: auto;
     height: 250px;
     color: #fff;
+}
+
+.javascript-image {
+    background-image: url(/assets/pictures/js-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 250px;
 }
 
 .box-image{
@@ -272,15 +280,6 @@ a {
     text-align: center;
     align-items: center;
     align-content: center;
-}
-
-.javascript-image {
-    background-image: url(../pictures/js.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: auto;
-    height: 250px;
 }
 
 .html {

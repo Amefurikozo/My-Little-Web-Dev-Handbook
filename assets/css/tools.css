@@ -57,8 +57,8 @@ body::after {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color:  rgb(46, 44, 44);
-    background-image: url(/assets/pictures/footer.jpg);
+    background-color:  rgba(58, 47, 43, 0.6);
+    background-image: url(/assets/pictures/footer-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -69,7 +69,7 @@ body::after {
     color: rgb(255, 255, 255);
     font-family: FontAwesome;
     font-size: 18px;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 ul.icons li {
@@ -97,7 +97,7 @@ ul.icons li {
 
 .label{
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 small {
@@ -164,7 +164,6 @@ small {
 body nav ul #current-page {
     background-color: rgba(58, 47, 43, 0.6);
     color: white;
-    cursor: default;
 }
 
 /* Button for links */
@@ -237,7 +236,7 @@ h5 {
 }
 
 .useful-image {
-    background-image: url(https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80);
+    background-image: url(/assets/pictures/useful-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -246,7 +245,7 @@ h5 {
 }
 
 .tools-image {
-    background-image: url(https://images.unsplash.com/photo-1569183839911-5a9e0ef9c74e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-image: url(/assets/pictures/tools-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -260,6 +259,15 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.extensions-image {
+    background-image: url(/assets/pictures/extensions-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 250px;
 }
 
 .box-image span {
@@ -276,15 +284,6 @@ h5 {
     text-align: center;
     align-items: center;
     align-content: center;
-}
-
-.extensions-image {
-    background-image: url(https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: auto;
-    height: 250px;
 }
 
 .useful {

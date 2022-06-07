@@ -179,7 +179,6 @@ ul.icons li {
 body nav ul #current-page {
     background-color: rgba(58, 47, 43, 0.6);
     color: white;
-    cursor: default;
 }
 
 /* Content Styling */
