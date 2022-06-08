@@ -227,6 +227,11 @@ a {
     padding: 0px;
 }
 
+.wrapper a:hover {
+    color: rgb(113, 106, 106);
+    text-decoration: underline;
+}
+
 .html-image {
     background-image: url(/assets/pictures/html-min.jpg);
     background-size: cover;
@@ -269,7 +274,7 @@ a {
     height: fit-content;
     padding: 15px;
     color: #fff;
-    font-size: 3em;
+    font-size: 48px;
     background-color: rgba(255, 255, 255, 0.07);
     box-shadow:  0px 0px 7px black;
     text-shadow: 1px 1px 5px black;

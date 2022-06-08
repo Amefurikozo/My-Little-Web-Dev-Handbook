@@ -11,6 +11,7 @@
     <link rel="shortcut icon" type="image/svg" href="assets/favi/about-favi.svg"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+    <link rel="stylesheet" href="/assets/css/transitions.css">
 </head>
 
 <body>
@@ -31,8 +32,8 @@
         </div>
     </div>
 
-    <div id="welcome"><h1>Welcome to my page!</h1></div> 
-    <div class="wrapper">
+    <div id="welcome" class="welc-tr"><h1>Welcome to my page!</h1></div> 
+    <div class="wrapper transition">
         <div id="me"></div>
         <div id="info">
             <strong>Hey, hope you're doing well.</strong> 
@@ -74,12 +75,24 @@
         <br>
         <div id="find-me">
             <img src="/assets/pictures/cat.png" alt="cat vector graphic" id="cat">
-            <ul class="icons">
-                <li><a href="https://github.com/Amefurikozo" class="icon fa-github"><br><span class="label">Github</span></a></li>
-                <li><a href="https://www.linkedin.com/in/charilaos-giannopoulos/" class="icon fa-linkedin"><br><span class="label">Linkedin</span></a></li>
-                <li><a href="https://www.instagram.com/betweenwinds/" class="icon fa-instagram"><br><span class="label">Instagram</span></a></li>
-                <li><a href="mailto:webdevcharilaosg" class="icon fa-envelope-o"><br><span class="label">Email</span></a></li>
-            </ul>
+            <div class="icons">
+                <button onclick="location.href='https://github.com/Amefurikozo'" class="label">
+                    <div class="icon fa-github"></div>
+                    Github
+                </button>           
+                <button onclick="location.href='https://www.linkedin.com/in/charilaos-giannopoulos/'" class="label">
+                    <div class="icon fa-linkedin"></div>
+                    Linkedin
+                </button>
+                <button onclick="location.href='https://www.instagram.com/betweenwinds/'" class="label">
+                    <div class="icon fa-instagram"></div>
+                    Instagram
+                </button>
+                <button onclick="location.href='mailto:webdevcharilaosg'" class="label">
+                    <div class="icon fa-envelope-o"></div>
+                    Email
+                </button>
+            </div>
         </div>
     </div>
     

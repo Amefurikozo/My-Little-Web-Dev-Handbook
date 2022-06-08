@@ -236,6 +236,11 @@ h5 {
     padding: 0px;
 }
 
+.wrapper a:hover {
+    color: rgb(113, 106, 106);
+    text-decoration: underline;
+}
+
 .useful-image {
     background-image: url(/assets/pictures/useful-min.jpg);
     background-size: cover;
