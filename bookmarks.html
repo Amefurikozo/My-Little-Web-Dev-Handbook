@@ -12,22 +12,27 @@
     <link rel="shortcut icon" type="image/svg" href="assets/favi/bookmark-favi.svg"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+    <link rel="stylesheet" href="/assets/css/transitions.css">
 </head>
 
 <body>
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html">About me</a></li>
-            <li><a href="bookmarks.html" id="current-page">Bookmarks</a></li>
-            <li><a href="tools.html">Tools</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">About me</a></li>
+                <li><a href="bookmarks.html" id="current-page">Bookmarks</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1 id="welcome">My web dev journey!</h1>
 
-    <div id="welcome"><h1>My web dev journey!</h1></div>
-    <div class="wrapper">
+        </div>
+    </header>
 
-        <div class="html">
+    <section class="wrapper other-tr">
+        <section class="html">
             <div class="html-image box-image">
                 <span>HTML</span>
             </div>
@@ -36,6 +41,7 @@
                 <h5>HTML basics</h5>
                 <ul id="html-1">
                     <li><a href="https://www.w3schools.com/html/default.asp" title="w3schools.com/html/default.asp">HTML tutorial</a></li>
+                    <li><a href="http://diveintohtml5.it/table-of-contents.html" title="diveintohtml5.it/table-of-contents.html">Dive into HTML5</a></li>
                     <li><a href="https://www.w3schools.com/html/html_blocks.asp" title="w3schools.com/html/html_blocks.asp">Block & inline elements</a></li>
                 </ul>
 
@@ -45,24 +51,28 @@
                     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" title="developer.mozilla.org/en-US/docs/Learn/HTML/Tables">Tables</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms" title="developer.mozilla.org/en-US/docs/Learn/Forms">Forms by MDN</a></li>
                     <li><a href="https://web.dev/learn/forms/" title="web.dev/learn/forms/">Forms by web.dev</a></li>
-                    <li><a href="https://www.w3schools.com/html/html_form_input_types.asp" title="w3schools.com/html/html_form_input_types.asp">Input</a></li>
+                    <li><a href="https://www.w3schools.com/html/html_form_elements.asp" title="w3schools.com/html/html_form_elements.asp">Forms elements</a></li>
+                    <li><a href="https://www.w3schools.com/html/html_form_input_types.asp" title="w3schools.com/html/html_form_input_types.asp">Input types</a></li>
+                    <li><a href="https://www.w3schools.com/html/html_form_attributes.asp" title="w3schools.com/html/html_form_attributes.asp">Input attributes</a></li>
                 </ul>
                 
                 <h5>Video, audio & pictures</h5>
                 <ul id="html-3">
                     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding" title="developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding">Multimedia and embedding</a></li>
+                    <li><a href="https://www.freecodecamp.org/news/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433" title="freecodecamp.org/news/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433g">Guide to responsive images</a></li>
                 </ul>
 
                 <h5>Accessibility</h5>
                 <ul id="html-4">
                     <li><a href="https://internetingishard.netlify.app/html-and-css/semantic-html/index.html" title="internetingishard.netlify.app/html-and-css/semantic-html/index.html">Semantic HTML</a></li>
+                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp" title="w3schools.com/html/html5_semantic_elements.asp">Semantic HTML #2</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" title="developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility information by MDN</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" title="developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">Aria</a></li>
                 </ul>
             </div>
-        </div>
+        </section>
 
-        <div class="css">
+        <section class="css">
             <div class="css-image box-image">
                 <span>CSS</span>
             </div>
@@ -84,37 +94,64 @@
                     <li><a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/" title="barelyfitz.com/screencast/html-training/css/positioning">Learn CSS positioning in ten steps</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats" title="developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats">Floats</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" title="developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a></li>
-                    <li><a href="https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_grid" title="w3schools.com/cssref/playdemo.asp?filename=playcss_grid">CSS grid</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout" title="developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">Basic concepts of grid layout</a></li>
                     <li><a href="https://www.youtube.com/watch?v=N5Lt1SLqBmQ" title="youtube.com/watch?v=N5Lt1SLqBmQ">Grid Layout presentation</a></li>
                     <li><a href="https://gridbyexample.com/video/" title="gridbyexample.com/video/">Grid layout video series</a></li>
                 </ul>
 
+                <h5>Responsive designs</h5>
                 <ul id="css-3">
-                    <h5>Responsive designs</h5>
                     <li><a href="https://web.dev/learn/design/" title="web.dev/learn/design/">Learn responsive design</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" title="developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design">Responsive everything</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries" title="developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries">Media queries</a></li>
                 </ul>
 
             </div>
-        </div>
+        </section>
     
-        <div class="javascript">
+        <section class="javascript">
             <div class="javascript-image box-image">
                 <span>JS</span>
             </div>
 
-            <ul class="links">
+            <div class="links">
+                <h5>Learn Javascript</h5>
+                <ul>
+                    <li><a href="https://eloquentjavascript.net/index.html" title="eloquentjavascript.net/index.html">Eloquent Javascript book</a></li>
+                    <li><a href="http://domenlightenment.com/" title="domenlightenment.com">Dom enlightenment book</a></li>
+                    <li><a href="https://www.freecodecamp.org/news/es5-to-esnext-heres-every-feature-added-to-javascript-since-2015-d0c255e13c6e/" title="freecodecamp.org/news/es5-to-esnext-heres-every-feature-added-to-javascript-since-2015-d0c255e13c6e">ES5 to ESNext</a></li>
+
+                    <li><a href="" title=""></a></li>
+                </ul>
                 
-            </ul>
-        </div>
-    </div>
+                <h5>Additional study material</h5>
+                <ul>
+                    <li><a href="https://www.sitepoint.com/mastering-javascripts-this-keyword/" title="sitepoint.com/mastering-javascripts-this-keyword">The keyword "this"</a></li>
+                    <li><a href="http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html" title="adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html">Into to IIFEs</a></li>
+                    <li><a href="https://www.codingame.com/playgrounds/6516/closures-in-javascript-for-beginners" title="codingame.com/playgrounds/6516/closures-in-javascript-for-beginners">Closures for beginners</a></li>
+                </ul>
+
+                <h5>Bundlers & compilers</h5>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=IZGNcSuwBZs" title="www.youtube.com/watch?v=IZGNcSuwBZs">Webpack 5 Crash Course</a></li>
+                    
+                    <li><a href="https://docs.npmjs.com/" title="docs.npmjs.com">npm Docs</a></li>
+                </ul>
+
+                <ul>
+                    <h5>Cheatsheet & more</h5>
+                    <li><a href="https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf" title="websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf">Javascript cheat sheet</a></li>
+                    <li><a href="https://htmlcheatsheet.com/js/" title="htmlcheatsheet.com/js">Javascript cheat sheet #2</a></li>
+                    <li><a href="https://thefullstack.xyz/solid-javascript/" title="thefullstack.xyz/solid-javascript">Be a SOLID js dev</a></li>
+                </ul>
+            </div>
+        </section>
+    </section>
     
     <br>
 
     <footer id="footer">
-        <small>Personal Portfolio <br> By Charilaos Giannopoulos</small>
+        <small>Personal portfolio, created with love.. <br> by Charilaos Giannopoulos</small>
         <ul class="icons">
             <li><a href="https://github.com/Amefurikozo" class="icon fa-github"><br><span class="label">Github</span></a></li>
             <li><a href="https://www.linkedin.com/in/charilaos-giannopoulos/" class="icon fa-linkedin"><br><span class="label">Linkedin</span></a></li>

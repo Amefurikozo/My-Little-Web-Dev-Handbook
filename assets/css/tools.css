@@ -99,14 +99,16 @@ ul.icons li {
 
 small {
     display: flex;
-    width: 220px;
+    width: 300px;
     align-items: center;
     font-size: 12px;
     background-color: rgba(255, 255, 255, 0.2);
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
     color: #fff;
     padding-left: 6px;
-    text-align: center;
+    text-align: left;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 /* Navigation Bar */

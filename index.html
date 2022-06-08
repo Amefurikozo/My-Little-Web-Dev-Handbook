@@ -15,15 +15,17 @@
 </head>
 
 <body>
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html" id="current-page">About me</a></li>
-            <li><a href="bookmarks.html">Bookmarks</a></li>
-            <li><a href="tools.html">Tools</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-    </nav>
-
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html" id="current-page">About me</a></li>
+                <li><a href="bookmarks.html">Bookmarks</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <div id="banner">
         <div class="background">
             <video autoplay="" loop="" muted="" id="about-me-bg" poster="/assets/pictures/bg.webp">
@@ -32,7 +34,7 @@
         </div>
     </div>
 
-    <div id="welcome" class="welc-tr"><h1>Welcome to my page!</h1></div> 
+    <h1 id="welcome" class="welc-tr">Welcome to my page!</h1>
     <div class="wrapper transition">
         <div id="me"></div>
         <div id="info">
@@ -95,6 +97,12 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <small class="sm-tr">
+            Personal portfolio, created with love.. <br> by Charilaos Giannopoulos
+        </small>
+    </footer>
     
     <script src="script.js"></script>
 </body>
