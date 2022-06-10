@@ -60,6 +60,7 @@ body::after {
     background-repeat: no-repeat;
     background-position: center;
     justify-content: space-between;
+    background-color: rgba(12, 12, 12, 0.3);
     
 }
 
@@ -89,7 +90,7 @@ ul.icons li {
     align-items: center;
     align-content: center;
     width: fit-content;
-    background-color: #a09fa0;
+    background-color: #a09fa000;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -105,7 +106,7 @@ small {
     align-items: center;
     font-size: 12px;
     /* background-color: rgba(255, 255, 255, 0.2); */
-    background-color: #a09fa0;
+    background-color: #a09fa000;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
     color: #fff;
     padding-left: 6px;
@@ -164,8 +165,9 @@ small {
 }
 
 body nav ul #current-page {
-    background-color: rgba(58, 47, 43, 0.6);
+    background-color: rgb(38, 38, 38);;
     color: white;
+    pointer-events: none;
 }
 
 /* Button for links */
@@ -207,23 +209,39 @@ html {
 
 body {
     background: #fff;
-    color: #444;
+    color: black;
 }
 
 a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+}
+
+h5 {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #welcome{
     display: block;
     color: rgb(255, 255, 255);
-    background-color: RGB(160, 159, 160);
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    padding: 20px;
     width: 100%;
     height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     text-align: center;
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.wrapper{
+    margin-top: 70px;
 }
 
 .wrapper li {
@@ -232,37 +250,13 @@ a {
     padding: 0px;
 }
 
+.wrapper a{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .wrapper a:hover {
-    color: rgb(113, 106, 106);
-    text-decoration: underline;
-}
-
-.html-image {
-    background-image: url(/assets/pictures/html-min.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: auto;
-    height: 250px;
-}
-
-.css-image {
-    background-image: url(/assets/pictures/css-min.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: auto;
-    height: 250px;
-    color: #fff;
-}
-
-.javascript-image {
-    background-image: url(/assets/pictures/js-min.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: auto;
-    height: 250px;
+    text-decoration: 2px underline;
 }
 
 .box-image{
@@ -275,37 +269,41 @@ a {
 .box-image span {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 100%;
     height: fit-content;
     padding: 15px;
     color: #fff;
     font-size: 48px;
-    background-color: rgba(255, 255, 255, 0.07);
-    box-shadow:  0px 0px 7px black;
+    background-color: rgb(38, 38, 38, 1);
     text-shadow: 1px 1px 5px black;
     text-align: center;
     align-items: center;
     align-content: center;
 }
 
-.html {
-    /* background-color:  rgba(115, 115, 115, 0.05); */
+.html, .useful {
     text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.2);
-    background-color:  rgb(255, 255, 255);
+    background-color:  rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 2px white;
 }
 
-.css {
-    /* background-color:  rgba(115, 115, 115, 0.05); */
+.css, .tools {
     text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.2);
-    background-color:  rgb(255, 255, 255);
+    background-color:  rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 2px white;
 }
 
-.javascript {
-    /* background-color:  rgba(115, 115, 115, 0.05); */
+.javascript, .extensions {
     text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.2);
-    background-color:  rgb(255, 255, 255);
+    background-color:  rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 2px white;
 }
 
 body{
     background-color: rgb(230, 230, 230);
+    background-image: url(/assets/pictures/bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
 }

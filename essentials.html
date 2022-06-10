@@ -7,7 +7,7 @@
     <meta name="Charilaos Giannopoulos" content="Useful Web Dev tools, extensions, links"/>
     <meta name="description" content="Useful tools, browser extensions, VS Code plugins and pages helpful for web developing. Must check, must have.">
     <title>Tools & More</title>
-    <link rel="stylesheet" href="assets/css/tools.css" />
+    <link rel="stylesheet" href="assets/css/rest.css" />
     <link rel="shortcut icon" type="image/svg" href="assets/favi/tool-favi.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
@@ -15,18 +15,23 @@
 </head>
 
 <body>
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html">About me</a></li>
-            <li><a href="bookmarks.html">Bookmarks</a></li>
-            <li><a href="tools.html" id="current-page">Tools</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">About me</a></li>
+                <li><a href="study.html">Study Material</a></li>
+                <li><a href="essentials.html" id="current-page">Essentials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1 id="welcome" class="transition">My web dev essentials</h1>
+        </div>
+    </header>
 
-    <div id="welcome"><h1>Web Dev Essentials</h1></div>
-    <div class="wrapper">
-        <div class="useful">
+    <br><br>
+    <section class="wrapper other-tr">
+        <section class="useful">
             <div class="useful-image box-image">
                 <span>Useful</span>
             </div>
@@ -63,9 +68,9 @@
                     <li><a href="https://docs.emmet.io/cheat-sheet/" title="docs.emmet.io/cheat-sheet/">Emmet cheat sheet</a></li>
                 </ul>
             </div>         
-        </div>
+        </section>
 
-        <div class="tools">
+        <section class="tools">
             <div class="tools-image box-image">
                 <span>Tools</span>
             </div>
@@ -96,11 +101,11 @@
                     <li><a href="https://pagespeed.web.dev/" title="pagespeed.web.dev">Page speed insights</a></li>
                 </ul>
             </div>
-        </div>
+        </section>
     
-        <div class="extensions">
+        <section class="extensions">
             <div class="extensions-image box-image">
-                <span style="width: fit-content; padding: 15px 30px 15px 30px;">Extensions</span>
+                <span>Extensions</span>
             </div>
 
             <div class="links">
@@ -131,8 +136,8 @@
                     <li><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag" title="marketplace.visualstudio.com">Auto close tag</a></li>
                 </ul>
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
     
     <br>
 
