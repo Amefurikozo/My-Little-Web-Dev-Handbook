@@ -9,10 +9,10 @@
 }
 
 .transition{
-    animation: transitionLtR 2s ease-in-out;
+    animation: transitionLtR 1.8s ease-in-out;
 }
 
-@keyframes transition {
+@keyframes transitionTtB {
     from {
         opacity: 0;
         transform: translateY(-100px );
@@ -25,10 +25,10 @@
 }
 
 .welc-tr{
-    animation: transition 1s ease-in; 
+    animation: transitionTtB 1.4s ease-in; 
 }
 
-@keyframes transitionBtT {
+@keyframes transitionSm {
     from {
         opacity: 0;
         transform: translateX(-100px );
@@ -39,18 +39,5 @@
 }
 
 .sm-tr{
-    animation: transitionBtT 1s ease-in-out; 
-}
-
-@keyframes transitionOp {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.other-tr{
-    animation: transitionOp 1s ease-in-out;
+    animation: transitionSm 1.2s ease-in-out;
 }
