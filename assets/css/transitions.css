@@ -52,10 +52,6 @@
     }
 }
 
-/* .other-tr{
-    animation: transitionOpSc 0.75s ease-in;
-} */
-
 @keyframes transitionTTout {
     from {
         opacity: 1;

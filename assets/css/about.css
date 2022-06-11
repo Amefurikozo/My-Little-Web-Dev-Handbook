@@ -60,12 +60,6 @@
 }
 
 /* The not so really Footer */
-body {
-    height: 100%;
-    min-height:100vh; 
-    margin:0;
-    position:relative;
-}
 
 #find-me {
     display: flex;
@@ -132,6 +126,21 @@ ul.icons button {
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
 }
 
+small {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: fit-content;
+    height: fit-content;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 14px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
 /* Navigation Bar */
 #menu {
     display: grid;
@@ -196,17 +205,11 @@ html {
 }
 
 body {
+    height: 100%;
+    min-height:100vh; 
+    position:relative;
     background: #fff;
     color: #444;
-}
-
-strong{
-    color: #444;
-}
-
-a {
-    color: black;
-    text-decoration: none;
 }
 
 #welcome{
@@ -234,7 +237,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
-
+    margin-right: 325px;
     margin-top: 150px;
     position: absolute;
     text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.2);
@@ -246,7 +249,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     width: 16em;
-    height: 22em;
+    height: 24em;
     border-radius: 20px;
     margin-top: 10px;
 }
@@ -254,16 +257,10 @@ a {
 #info {
     margin-top: 10px;
     width: 420px;
-    height: 22em;
+    height: fit-content;
     background-color: rgba(255, 255, 255, 1);
-    padding-top: 15px;
-    padding-left: 30px;
+    padding:20px;
     border-radius: 20px;
-}
-
-.my-name{
-    font-size: 16px;
-    font-weight: 600;
 }
 
 table {
@@ -279,22 +276,16 @@ table {
 
 td {
     text-align: left;
-    padding-right: 32px;
+    padding-right: 20px;
 }
 
-small {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    width: fit-content;
-    height: fit-content;
-    font-size: 12px;
-    background-color: rgba(255, 255, 255, 0.2);
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 14px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+strong{
+    color: #444;
+}
+
+#menu a {
+    color: black;
+    text-decoration: none;
 }
 
 #ap-img{
@@ -348,10 +339,6 @@ small {
     float: left;
 
     cursor: default;
-}
-
-.wrapper{
-    margin-right: 325px;
 }
 
 #ap-text span {
