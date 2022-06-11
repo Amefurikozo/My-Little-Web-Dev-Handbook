@@ -1,10 +1,13 @@
-var tooltip = document.querySelector('#about-page')
+var tooltip = document.querySelector('#btn')
+var txtArea = document.querySelector('#ap-text')
+btn = document.querySelector('button')
 
-tooltip.addEventListener('click', function() {
-  if (this.classList.contains('active')) {
-    this.classList.remove('active');
-  } else {
-    this.classList.add('active');
-  }
-  
-});
+function showText() {
+    if(txtArea.classList.contains('remove')){
+        txtArea.classList.add('active')
+        txtArea.classList.remove('remove')
+    } else {
+        txtArea.classList.add('remove')
+        txtArea.classList.remove('active')
+    }
+}

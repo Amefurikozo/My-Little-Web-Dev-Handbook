@@ -297,6 +297,17 @@ small {
     border-bottom-right-radius: 15px;
 }
 
+#ap-img{
+    background-image: url(/assets/pictures/info.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 3em;
+    height: 3em;
+    
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.6));
+}
+
 #about-page{
     display: flex;
     flex-direction: column;
@@ -310,37 +321,37 @@ small {
     justify-content: center;
     align-items: center;
     border: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    width: 50px;
-    height: 100px;
-    padding-left: 2px;
-    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 45px;
+    height: 60px;
+    padding-left: 1px;
+    background-color: rgba(255, 255, 255, 1);
     color: rgb(0, 0, 0);
-    transition-property: background-color;
-    transition-duration: 1s;
-    transition-timing-function: ease-out;
-    transition-delay: 0.25s;
 
     cursor: pointer;
+    float: left;
+    position: absolute;
+    margin-left: 5px;
 }
 
 #ap-text {
     margin-top: 12px;
-    width: 510px;
-    visibility: hidden;
+    width: 325px;
     height: fit-content;
     background-color: rgba(255, 255, 255, 1);
     color: rgb(0, 0, 0);
     text-align: left;
     border-radius: 10px;
     padding: 10px 15px 15px 15px;
+    font-size: 0.70em;
   
-    position: absolute;
-    z-index: 1;
+    float: left;
 
-    left: 0;
-    margin-left: 40px;
+    cursor: default;
+}
+
+.wrapper{
+    margin-right: 325px;
 }
 
 #ap-text span {
@@ -348,18 +359,12 @@ small {
     margin-top: 5px;
 }
 
-#about-page.active #ap-text {
-    visibility: visible;
+#ap-text.active {
     animation: transitionTTin 0.75s ease-in-out;
+    opacity: 1;
 }
 
-#ap-img{
-    background-image: url(/assets/pictures/info.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 3em;
-    height: 3em;
-    
-    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.6));
+#ap-text.remove{
+    animation: transitionTTout 0.75s ease-in-out;
+    opacity: 0;
 }
