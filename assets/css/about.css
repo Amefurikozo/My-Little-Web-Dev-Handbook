@@ -109,7 +109,7 @@ ul.icons button {
 }
 
 .icons {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
