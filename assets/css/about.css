@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 #about-me-bg{
@@ -174,7 +178,7 @@ small {
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.7);
     
-	font-size: 16px;
+	font-size: 1em;
 	text-transform: capitalize;
 }
 
@@ -252,7 +256,7 @@ body {
 
 #info {
     margin-top: 10px;
-    width: 420px;
+    width: 26.25em;
     height: fit-content;
     background-color: rgba(255, 255, 255, 1);
     padding:20px;
@@ -321,6 +325,10 @@ strong{
     margin-left: 5px;
 }
 
+#about-page button:hover {
+    box-shadow: 4px 2px 4px black;
+}
+
 #ap-text {
     margin-top: 12px;
     width: 325px;
@@ -338,6 +346,7 @@ strong{
 #ap-text span {
     display: block;
     margin-top: 5px;
+    padding-right: 5px;
 }
 
 #ap-text.active {
