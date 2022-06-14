@@ -15,13 +15,19 @@
     height: auto;
     
     position: fixed;
+    top: 0;
     z-index: -1;
 }
+
+/* position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%; */
 
 /* Content Styling */
 html {
     font-size: 12pt;
-    
 }
 
 body {
@@ -153,7 +159,7 @@ strong{
     background-color: rgba(255, 255, 255, 1);
     color: rgb(0, 0, 0);
     text-align: left;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px 15px 15px 15px;
     font-size: 0.70em;
 
@@ -316,6 +322,20 @@ body nav ul #current-page {
     pointer-events: none;
 }
 
+@media (min-aspect-ratio: 16/9){
+    #about-me-bg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    #about-me-bg {
+        width: auto;
+        height: 100%;
+    }
+}
+
 @media (max-width: 1400px) {
     .wrapper{
         margin-top: 100px;
@@ -391,7 +411,6 @@ body nav ul #current-page {
 }
 
 @media (max-width: 1200px) {
-
 }
 
 @media (max-width: 992px) {
@@ -399,16 +418,6 @@ body nav ul #current-page {
 }
 
 @media (max-width: 768px) {
-    body{
-        background-image: url(/assets/pictures/bg.webp);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .background{
-        display: none;
-    }
-
     #welcome{
         font-size: 1rem;
         height: fit-content;
@@ -457,6 +466,10 @@ body nav ul #current-page {
         box-shadow: 0px 0px 3px black;
     }
 
+    #info {
+        width: 325px;
+    }
+
     #ap-text {
         margin-top: 41px;
         width: 325px;
@@ -503,4 +516,35 @@ body nav ul #current-page {
 }
 
 @media (max-width: 450px) {
+    body{
+        background-image: url(/assets/pictures/bg.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .background{
+        display: none;
+    }
+
+    #welcome{
+        font-size: 1rem;
+        height: fit-content;
+        padding: 10px;
+    }
+
+    .wrapper :nth-child(1) { order: 5; } /* hidden text */
+    .wrapper :nth-child(2) { order: 4; } /* button */
+    .wrapper :nth-child(4) { order: 3; } /* info */
+    
+    .wrapper :nth-child(5) { order: 2; } /* find me */
 }
+
+/* 
+800x1280 
+
+1024x1366
+
+834x1112
+
+360x740
+*/
