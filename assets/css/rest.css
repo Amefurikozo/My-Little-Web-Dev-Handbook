@@ -162,7 +162,7 @@ body{
 
 .html a, .css a, .javascript a{
     text-decoration: none;
-    color: black;
+    color: rgb(35, 135, 200);
 }
 
 .useful, .tools, .extensions {
@@ -212,40 +212,6 @@ body{
 .ls ul{
     display: none;
 }
-
-/* #html-1 {
-    display: none;
-}
-#html-2 {
-    display: none;
-}
-#html-3 {
-    display: none;
-}
-#html-4 {
-    display: none;
-}
-#css-1{
-    display: none;
-}
-#css-2{
-    display: none;
-}
-#css-3{
-    display: none;
-}
-#js-1{
-    display: none;
-}
-#js-2{
-    display: none;
-}
-#js-3{
-    display: none;
-}
-#js-4{
-    display: none;
-} */
 
 /* Footer */
 body {
