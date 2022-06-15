@@ -188,14 +188,16 @@ body{
 
 .links{
     margin-left: 5px;
-    padding: 5px;
-    color: rgb(0, 0, 0);
-    font-size: 1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .ls {
     cursor: pointer;
+}
+
+.ls button{
+    background: none;
+    border: none;
+    font-size: 1em;
 }
 
 .ls ul {
@@ -455,5 +457,13 @@ small {
     }
     #menu #current-page::after{
         content: " ⬅";
+    }
+
+    .ls button{
+        padding: 2px;
+    }
+
+    .wrapper li {
+        margin-left: 22px;
     }
 }

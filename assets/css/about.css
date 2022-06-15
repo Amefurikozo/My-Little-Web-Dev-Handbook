@@ -567,6 +567,7 @@ body nav ul #current-page {
     #submenu i{
         color: rgb(0, 0, 0);
         font-size: 1rem;
+        padding-right: 1px;
     }
 
     #submenu i.color {

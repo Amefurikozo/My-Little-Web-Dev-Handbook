@@ -12,19 +12,20 @@ function showText() {
     }
 }
 
-linkSection = document.querySelectorAll('.ls').forEach(item => {
-    item.addEventListener('click', event => {
-        if(event.target.querySelector('ul').style.display == '' || event.target.querySelector('ul').style.display == 'none'){
-            event.target.querySelector('ul').style.display = 'block'
+listButtons = document.querySelectorAll('.ls button').forEach(item => {
+    item.onclick = ( event =>{
+        if(event.target.querySelector('i').classList.contains('fa-circle-plus')){
             event.target.querySelector('i').classList.remove('fa-circle-plus')
             event.target.querySelector('i').classList.add('fa-circle-minus')
+            event.target.parentNode.querySelector('ul').style.display = 'block'
         } else {
-            event.target.querySelector('ul').style.display = 'none'
             event.target.querySelector('i').classList.remove('fa-circle-minus')
             event.target.querySelector('i').classList.add('fa-circle-plus')
+            event.target.parentNode.querySelector('ul').style.display = 'none'
         }
     })
 })
+
 
 function showSubMenu(){
     if(document.querySelector('#submenu').classList.contains('clicked')){
