@@ -307,12 +307,7 @@ small {
     border-bottom-right-radius: 15px;
 }
 
-#menu i{
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    margin-top: 14px;
-    margin-left: 8px;
+#submenu{
     display: none;
 }
 
@@ -392,24 +387,34 @@ small {
         width: 30%;
     }
 
-    #menu i{
-        display: block;
-        margin-top: 15px;
+    #submenu{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 0;
+        border: none;
+        background: none;
+    }
+
+    #submenu.clicked {
+        background: rgb(182, 182, 182);
+    }
+
+    #submenu i{
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+    }
+
+    #submenu i.color {
         color: white;
     }
 
-    #menu span{
-        height: 40px;
-        width: 40px;
-        background-color: #262626;
-        position: absolute;
-        left: 0;
-
-        border-bottom: 1px solid white;
-    }
-
     #menu ul{
-        display: flex;
+        display: none;
         flex-direction: column;
         position: absolute;
         left: 0;
@@ -419,6 +424,10 @@ small {
         background-color: #262626;
 
         width: 150px;
+    }
+
+    #menu .show-menu{
+        display: flex;
     }
 
     #menu li{
@@ -431,7 +440,6 @@ small {
         background-color: rgb(255, 255, 255);
         color: black;
     }
-
 
     #menu a{
         float: none;

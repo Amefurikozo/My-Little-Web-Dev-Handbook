@@ -25,3 +25,15 @@ linkSection = document.querySelectorAll('.ls').forEach(item => {
         }
     })
 })
+
+function showSubMenu(){
+    if(document.querySelector('#submenu').classList.contains('clicked')){
+        document.querySelector('#submenu').classList.remove('clicked')
+        document.querySelector('#menu ul').classList.remove('show-menu')
+        document.querySelector('#submenu i').classList.remove('color')
+    } else {
+        document.querySelector('#submenu').classList.add('clicked')
+        document.querySelector('#menu ul').classList.add('show-menu')
+        document.querySelector('#submenu i').classList.add('color')
+    }
+}
