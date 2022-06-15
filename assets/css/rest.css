@@ -190,14 +190,11 @@ body{
     margin-left: 5px;
 }
 
-.ls {
-    cursor: pointer;
-}
-
 .ls button{
     background: none;
     border: none;
     font-size: 1em;
+    cursor: pointer;
 }
 
 .ls ul {
