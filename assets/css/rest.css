@@ -83,7 +83,7 @@ header{
 	text-transform: capitalize;
 }
 
-#menu li a:hover {
+#menu a:hover {
 	background-color: #a09fa0;
     color: white;
 }
@@ -307,6 +307,15 @@ small {
     border-bottom-right-radius: 15px;
 }
 
+#menu i{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin-top: 14px;
+    margin-left: 8px;
+    display: none;
+}
+
 @media (max-width: 1400px) {
     .wrapper{
         width: 100%;
@@ -381,5 +390,62 @@ small {
     }
     .icons ul a{
         width: 30%;
+    }
+
+    #menu i{
+        display: block;
+        margin-top: 15px;
+        color: white;
+    }
+
+    #menu span{
+        height: 40px;
+        width: 40px;
+        background-color: #262626;
+        position: absolute;
+        left: 0;
+
+        border-bottom: 1px solid white;
+    }
+
+    #menu ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 40px;
+        background-color: #262626;
+
+        width: 150px;
+    }
+
+    #menu li{
+        text-align: left;
+        padding: 0;
+        width: 100%;
+    }
+
+    #menu li a:hover{
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+
+
+    #menu a{
+        float: none;
+        color: rgb(255, 255, 255);
+        height: 50px;
+        padding-top: 5px;
+        font-size: 1.15em;
+    }
+
+    #menu #current-page{
+        background: #5b5555;
+        color: #ffffff;
+    }
+    #menu #current-page::after{
+        content: " ⬅";
     }
 }
