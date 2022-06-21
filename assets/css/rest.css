@@ -251,7 +251,7 @@ body::after {
     
 }
 
-.icon:before {
+.bi:before {
     color: rgb(255, 255, 255);
     font-family: FontAwesome;
     font-size: 18px;
