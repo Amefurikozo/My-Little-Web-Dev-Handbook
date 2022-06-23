@@ -14,13 +14,13 @@ function showText() {
 
 listButtons = document.querySelectorAll('.ls button').forEach(item => {
     item.onclick = ( event =>{
-        if(event.target.querySelector('i').classList.contains('fa-circle-plus')){
-            event.target.querySelector('i').classList.remove('fa-circle-plus')
-            event.target.querySelector('i').classList.add('fa-circle-minus')
+        if(event.target.querySelector('i').classList.contains('bi-plus-circle-fill')){
+            event.target.querySelector('i').classList.remove('bi-plus-circle-fill')
+            event.target.querySelector('i').classList.add('bi-dash-circle-fill')
             event.target.parentNode.querySelector('ul').style.display = 'block'
         } else {
-            event.target.querySelector('i').classList.remove('fa-circle-minus')
-            event.target.querySelector('i').classList.add('fa-circle-plus')
+            event.target.querySelector('i').classList.remove('bi-dash-circle-fill')
+            event.target.querySelector('i').classList.add('bi-plus-circle-fill')
             event.target.parentNode.querySelector('ul').style.display = 'none'
         }
     })
