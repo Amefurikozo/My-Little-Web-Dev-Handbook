@@ -113,7 +113,7 @@ html {
 
 body{
     background-color: rgb(255, 255, 255);
-    background-image: url(/assets/pictures/bg.webp);
+    background-image: url(./assets/pictures/bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
