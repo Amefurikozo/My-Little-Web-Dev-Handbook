@@ -75,7 +75,7 @@ body {
 }
 
 #me {
-    background-image: url(./assets/pictures/myself.jpeg);
+    background-image: url(https://amefurikozo.github.io/My-Page/assets/pictures/myself.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,7 +139,7 @@ strong{
 }
 
 #ap-img{
-    background-image: url(./assets/pictures/info.png);
+    background-image: url(https://amefurikozo.github.io/My-Page/assets/pictures/info.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -328,7 +328,7 @@ body nav ul #current-page {
 
 @media (max-width: 992px){
     body{
-        background-image: url(./assets/pictures/bg.webp);
+        background-image: url(https://amefurikozo.github.io/My-Page/assets/pictures/bg.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -348,7 +348,7 @@ body nav ul #current-page {
 
 @media (max-width: 576px) {
     body{
-        background-image: url(./assets/pictures/bg.webp);
+        background-image: url(https://amefurikozo.github.io/My-Page/assets/pictures/bg.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
