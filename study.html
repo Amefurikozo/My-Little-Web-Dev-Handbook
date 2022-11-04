@@ -1,232 +1,595 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Charilaos Giannopoulos" content="Web Dev study material"/>
-    <meta name="description" content="Useful web pages regarding web developing that helped me improve my skills, enough to be able to make this portfolio website. Basically bookmarks and study material about HTML, CSS and Javascript.">
-    <title>Study Material</title>
-    <link rel="stylesheet" href="./assets/css/rest.css" />
-    <link rel="shortcut icon" type="image/svg" href="./assets/favi/bookmark-favi.svg"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
-    <link rel="stylesheet" href="./assets/css/transitions.css">
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Charilaos Giannopoulos" content="Web Dev study material" />
+		<meta
+			name="description"
+			content="Useful web pages regarding web developing that helped me improve my skills, enough to be able to make this website. Basically bookmarks and study material about HTML, CSS and Javascript and more."
+		/>
+		<title>Study Material</title>
+		<link rel="stylesheet" href="./assets/css/rest.css" />
+		<link
+			rel="shortcut icon"
+			type="image/svg"
+			href="./assets/favi/bookmark-favi.svg"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+		/>
+		<link rel="stylesheet" href="./assets/css/transitions.css" />
+	</head>
 
-<body>
-    <header>
-        <nav id="menu">
-            <button id="submenu" onclick="showSubMenu()"><i class="bi-grid-3x3-gap-fill"></i></button>
-            <ul>
-                <li><a href="index.html">About me</a></li>
-                <li><a href="study.html" id="current-page">Study Material</a></li>
-                <li><a href="essentials.html">Essentials</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    
-    <h1 id="welcome" class="transition">My web dev journey</h1>
-    <br><br>
-    <section class="wrapper">
-        <section class="html">
-            <div class="html-image box-image">
-                <span>HTML</span>
-            </div>
+	<body>
+		<header>
+			<nav id="menu">
+				<button id="submenu" onclick="showSubMenu()">
+					<i class="bi-grid-3x3-gap-fill"></i>
+				</button>
+				<ul>
+					<li><a href="index.html">About me</a></li>
+					<li><a href="study.html" id="current-page">Study Material</a></li>
+					<li><a href="essentials.html">Essentials</a></li>
+				</ul>
+			</nav>
+		</header>
 
-            <div class="links">
-                <div class="ls">
-                    <button>
-                        <i class="bi bi-plus-circle-fill"></i>
-                        HTML basics 
-                    </button>
-                    
-                    <ul id="html-1">
-                        <li><a href="https://www.w3schools.com/html/default.asp" title="w3schools.com/html/default.asp">HTML tutorial</a></li>
-                        <li><a href="http://diveintohtml5.it/table-of-contents.html" title="diveintohtml5.it/table-of-contents.html">Dive into HTML5</a></li>
-                        <li><a href="https://www.w3schools.com/html/html_blocks.asp" title="w3schools.com/html/html_blocks.asp">Block and inline elements</a></li>
-                    </ul>
-                </div>
+		<h1 id="welcome" class="transition">My web dev journey</h1>
+		<br /><br />
+		<section class="wrapper">
+			<section class="html">
+				<div class="html-image box-image">
+					<span>HTML</span>
+				</div>
 
-                <div class="ls">
-                    <button>
-                        <i class="bi bi-plus-circle-fill"></i>
-                        Lists, tables, forms and input
-                    </button>
-                        
-                    <ul id="html-2">
-                        <li><a href="https://learn.shayhowe.com/html-css/creating-lists/" title="learn.shayhowe.com/html-css/creating-lists">Lists</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" title="developer.mozilla.org/en-US/docs/Learn/HTML/Tables">Tables</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms" title="developer.mozilla.org/en-US/docs/Learn/Forms">Forms by MDN</a></li>
-                        <li><a href="https://web.dev/learn/forms/" title="web.dev/learn/forms/">Forms by web.dev</a></li>
-                        <li><a href="https://www.w3schools.com/html/html_form_elements.asp" title="w3schools.com/html/html_form_elements.asp">Forms elements</a></li>
-                        <li><a href="https://www.w3schools.com/html/html_form_input_types.asp" title="w3schools.com/html/html_form_input_types.asp">Input types</a></li>
-                        <li><a href="https://www.w3schools.com/html/html_form_attributes.asp" title="w3schools.com/html/html_form_attributes.asp">Input attributes</a></li>
-                    </ul>
-                </div>
-                
-                <div class="ls">
-                    <button>
-                        <i class="bi bi-plus-circle-fill"></i>
-                        Video, audio and pictures
-                    </button>
+				<div class="links">
+					<div class="ls">
+						<button>
+							<i class="bi bi-plus-circle-fill"></i>
+							HTML basics
+						</button>
 
-                    <ul id="html-3">
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding" title="developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding">Multimedia and embedding</a></li>
-                        <li><a href="https://www.freecodecamp.org/news/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433" title="freecodecamp.org/news/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433g">Guide to responsive images</a></li>
-                    </ul>
-                </div>
+						<ul id="html-1">
+							<li>
+								<a
+									href="https://www.w3schools.com/html/default.asp"
+									title="w3schools.com/html/default.asp"
+									>HTML tutorial</a
+								>
+							</li>
+							<li>
+								<a
+									href="http://diveintohtml5.it/table-of-contents.html"
+									title="diveintohtml5.it/table-of-contents.html"
+									>Dive into HTML5</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.w3schools.com/html/html_blocks.asp"
+									title="w3schools.com/html/html_blocks.asp"
+									>Block and inline elements</a
+								>
+							</li>
+						</ul>
+					</div>
 
-                <div class="ls">
-                    <button>
-                        <i class="bi bi-plus-circle-fill"></i>                      
-                        Accessibility
-                    </button>
+					<div class="ls">
+						<button>
+							<i class="bi bi-plus-circle-fill"></i>
+							Lists, tables, forms and input
+						</button>
 
+						<ul id="html-2">
+							<li>
+								<a
+									href="https://learn.shayhowe.com/html-css/creating-lists/"
+									title="learn.shayhowe.com/html-css/creating-lists"
+									>Lists</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables"
+									title="developer.mozilla.org/en-US/docs/Learn/HTML/Tables"
+									>Tables</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Learn/Forms"
+									title="developer.mozilla.org/en-US/docs/Learn/Forms"
+									>Forms by MDN</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://web.dev/learn/forms/"
+									title="web.dev/learn/forms/"
+									>Forms by web.dev</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.w3schools.com/html/html_form_elements.asp"
+									title="w3schools.com/html/html_form_elements.asp"
+									>Forms elements</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.w3schools.com/html/html_form_input_types.asp"
+									title="w3schools.com/html/html_form_input_types.asp"
+									>Input types</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.w3schools.com/html/html_form_attributes.asp"
+									title="w3schools.com/html/html_form_attributes.asp"
+									>Input attributes</a
+								>
+							</li>
+						</ul>
+					</div>
 
-                    <ul id="html-4">
-                        <li><a href="https://internetingishard.netlify.app/html-and-css/semantic-html/index.html" title="internetingishard.netlify.app/html-and-css/semantic-html/index.html">Semantic HTML</a></li>
-                        <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp" title="w3schools.com/html/html5_semantic_elements.asp">Semantic HTML #2</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" title="developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility information by MDN</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" title="developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">Aria</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+					<div class="ls">
+						<button>
+							<i class="bi bi-plus-circle-fill"></i>
+							Video, audio and pictures
+						</button>
 
-        <section class="css">
-            <div class="css-image box-image">
-                <span>CSS</span>
-            </div>
-            
-            <div class="links">
-                <div class="ls">
-                    <button>
-                        <i class="bi bi-plus-circle-fill"></i>
-                        Learn the basics  
-                    </button>
+						<ul id="html-3">
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding"
+									title="developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding"
+									>Multimedia and embedding</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.freecodecamp.org/news/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433"
+									title="freecodecamp.org/news/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433g"
+									>Guide to responsive images</a
+								>
+							</li>
+						</ul>
+					</div>
 
-                    <ul id="css-1">
-                        <li><a href="https://learn.shayhowe.com/html-css/" title="learn.shayhowe.com/html-css">Learn to Code HTML and CSS</a></li>
-                        <li><a href="https://internetingishard.netlify.app/html-and-css/index.html" title="internetingishard.netlify.app/html-and-css/index.html">HTML and CSS is hard (not)</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model" title="developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model">The box model</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" title="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">Values and units</a></li>
-                        <li><a href="https://css-tricks.com/attribute-selectors/" title="css-tricks.com/attribute-selectors">CSS attribute selectors</a></li>
-                        <li><a href="https://www.webfx.com/blog/web-design/link-pseudo-classes/" title="webfx.com/blog/web-design/link-pseudo-classes">CSS link pseudo-classes</a></li>
-                    </ul>
-                </div>
+					<div class="ls">
+						<button>
+							<i class="bi bi-plus-circle-fill"></i>
+							Accessibility
+						</button>
 
-                <div class="ls">
-                    <button>
-                        <i class="bi bi-plus-circle-fill"></i>
-                        Positioning, flexbox and grid
-                    </button>
+						<ul id="html-4">
+							<li>
+								<a
+									href="https://internetingishard.netlify.app/html-and-css/semantic-html/index.html"
+									title="internetingishard.netlify.app/html-and-css/semantic-html/index.html"
+									>Semantic HTML</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.w3schools.com/html/html5_semantic_elements.asp"
+									title="w3schools.com/html/html5_semantic_elements.asp"
+									>Semantic HTML #2</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Web/Accessibility"
+									title="developer.mozilla.org/en-US/docs/Web/Accessibility"
+									>Accessibility information by MDN</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"
+									title="developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"
+									>Aria</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.youtube.com/watch?v=z8xUCzToff8&t=1053s"
+									title="youtube.com/watch?v=z8xUCzToff8&t=1053s"
+									>Accessibility fundamentals with Rob Dodson</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g"
+									title="youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g"
+									>Accessibility basics, small videos playlist</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-                    <ul id="css-2">
-                        <li><a href="https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/" title="freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more">How to center anything with CSS</a></li>
-                        <li><a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/" title="barelyfitz.com/screencast/html-training/css/positioning">Learn CSS positioning in ten steps</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats" title="developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats">Floats</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" title="developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout" title="developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">Basic concepts of grid layout</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=N5Lt1SLqBmQ" title="youtube.com/watch?v=N5Lt1SLqBmQ">Grid Layout presentation</a></li>
-                        <li><a href="https://gridbyexample.com/video/" title="gridbyexample.com/video/">Grid layout video series</a></li>
-                    </ul>
-                </div>
+			<section class="css">
+				<div class="css-image box-image">
+					<span>CSS</span>
+				</div>
 
-                <div class="ls">
-                    <button>
-                        <i class="bi bi-plus-circle-fill"></i>
-                        Responsive designs
-                    </button>
+				<div class="links">
+					<div class="ls">
+						<button>
+							<i class="bi bi-plus-circle-fill"></i>
+							Learn the basics
+						</button>
 
-                    <ul id="css-3">
-                        <li><a href="https://web.dev/learn/design/" title="web.dev/learn/design/">Learn responsive design</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" title="developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design">Responsive everything</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries" title="developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries">Media queries</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <br>
-                </div>
-            </div>
-        </section>
-    
-        <section class="javascript">
-            <div class="javascript-image box-image">
-                <span>JS</span>
-            </div>
+						<ul id="css-1">
+							<li>
+								<a
+									href="https://learn.shayhowe.com/html-css/"
+									title="learn.shayhowe.com/html-css"
+									>Learn to Code HTML and CSS</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://internetingishard.netlify.app/html-and-css/index.html"
+									title="internetingishard.netlify.app/html-and-css/index.html"
+									>HTML and CSS is hard (not)</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
+									title="developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
+									>The box model</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units"
+									title="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units"
+									>Values and units</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://css-tricks.com/attribute-selectors/"
+									title="css-tricks.com/attribute-selectors"
+									>CSS attribute selectors</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.webfx.com/blog/web-design/link-pseudo-classes/"
+									title="webfx.com/blog/web-design/link-pseudo-classes"
+									>CSS link pseudo-classes</a
+								>
+							</li>
+						</ul>
+					</div>
 
-            <div class="links">
-                <div class="ls">
-                    <button>
-                        <i class="bi bi-plus-circle-fill"></i>
-                        Learn Javascript
-                    </button>
+					<div class="ls">
+						<button>
+							<i class="bi bi-plus-circle-fill"></i>
+							Positioning, flexbox and grid
+						</button>
 
-                    <ul id="js-1">
-                        <li><a href="https://eloquentjavascript.net/index.html" title="eloquentjavascript.net/index.html">Eloquent Javascript book</a></li>
-                        <li><a href="http://domenlightenment.com/" title="domenlightenment.com">Dom enlightenment book</a></li>
-                        <li><a href="https://www.freecodecamp.org/news/es5-to-esnext-heres-every-feature-added-to-javascript-since-2015-d0c255e13c6e/" title="freecodecamp.org/news/es5-to-esnext-heres-every-feature-added-to-javascript-since-2015-d0c255e13c6e">ES5 to ESNext</a></li>
-    
-                        <li><a href="" title=""></a></li>
-                    </ul>
-                </div>
-                
-                <div class="ls">
-                    <button>
-                        <i class="bi bi-plus-circle-fill"></i>
-                        Additional study material
-                    </button>
+						<ul id="css-2">
+							<li>
+								<a
+									href="https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/"
+									title="freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more"
+									>How to center anything with CSS</a
+								>
+							</li>
+							<li>
+								<a
+									href="http://www.barelyfitz.com/screencast/html-training/css/positioning/"
+									title="barelyfitz.com/screencast/html-training/css/positioning"
+									>Learn CSS positioning in ten steps</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats"
+									title="developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats"
+									>Floats</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"
+									title="developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"
+									>Flexbox</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout"
+									title="developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout"
+									>Basic concepts of grid layout</a
+								>
+							</li>
+							<li>
+								<a href="https://cssgridgarden.com/" title="cssgridgarden.com/"
+									>Grid practicing game</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.youtube.com/watch?v=N5Lt1SLqBmQ"
+									title="youtube.com/watch?v=N5Lt1SLqBmQ"
+									>Grid Layout presentation</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://gridbyexample.com/video/"
+									title="gridbyexample.com/video/"
+									>Grid layout video series</a
+								>
+							</li>
+						</ul>
+					</div>
 
-                    <ul id="js-2">
-                        <li><a href="https://www.sitepoint.com/mastering-javascripts-this-keyword/" title="sitepoint.com/mastering-javascripts-this-keyword">The keyword "this"</a></li>
-                        <li><a href="http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html" title="adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html">Intro to IIFEs</a></li>
-                        <li><a href="https://www.codingame.com/playgrounds/6516/closures-in-javascript-for-beginners" title="codingame.com/playgrounds/6516/closures-in-javascript-for-beginners">Closures for beginners</a></li>
-                    </ul>
-                </div>
+					<div class="ls">
+						<button>
+							<i class="bi bi-plus-circle-fill"></i>
+							Responsive designs
+						</button>
 
-                <div class="ls">
-                    <button>
-                        <i class="bi bi-plus-circle-fill"></i>
-                        Bundlers and compilers
-                    </button>
+						<ul id="css-3">
+							<li>
+								<a
+									href="https://web.dev/learn/design/"
+									title="web.dev/learn/design/"
+									>Learn responsive design</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+									title="developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+									>Responsive everything</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries"
+									title="developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries"
+									>Media queries</a
+								>
+							</li>
+						</ul>
+					</div>
 
-                    <ul id="js-3">
-                        <li><a href="https://www.youtube.com/watch?v=IZGNcSuwBZs" title="www.youtube.com/watch?v=IZGNcSuwBZs">Webpack 5 Crash Course</a></li>
-                        
-                        <li><a href="https://docs.npmjs.com/" title="docs.npmjs.com">npm Docs</a></li>
-                    </ul>
-                </div>
+					<div class="ls">
+						<button>
+							<i class="bi bi-plus-circle-fill"></i>
+							Simple transitions and animations
+						</button>
 
-                <div class="ls">
-                    <button>
-                        <i class="bi bi-plus-circle-fill"></i> 
-                        Cheatsheet and more
-                    </button>
+						<ul id="css-3">
+							<li>
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions"
+									title="developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions"
+									>CSS Transitions</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://tobiasahlin.com/blog/css-trick-animating-link-underlines/"
+									title="tobiasahlin.com/blog/css-trick-animating-link-underlines/"
+									>Animating a link underline</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://tobiasahlin.com/spinkit/"
+									title="tobiasahlin.com/spinkit/"
+									>Loading indicator examples</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://3dtransforms.desandro.com/carousel"
+									title="3dtransforms.desandro.com/carousel"
+									>The Carousel</a
+								>
+							</li>
+							<li>
+								<a href="https://animate.style/" title="animate.style/"
+									>Animate.css library</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-                    <ul id="js-4">
-                        <li><a href="https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf" title="websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf">Javascript cheat sheet</a></li>
-                        <li><a href="https://htmlcheatsheet.com/js/" title="htmlcheatsheet.com/js">Javascript cheat sheet #2</a></li>
-                        <li><a href="https://thefullstack.xyz/solid-javascript/" title="thefullstack.xyz/solid-javascript">Be a SOLID JS dev</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </section>
-    
-    <br><br><br>
+			<section class="javascript">
+				<div class="javascript-image box-image">
+					<span>JS</span>
+				</div>
 
-    <footer id="footer">
-        <small>Personal portfolio, created with love.. <br> by Charilaos Giannopoulos</small>
-        <ul class="icons">
-            <li><a href="https://github.com/Amefurikozo" class="bi bi-github"><br><span class="label" target="_blank">Github</span></a></li>
-            <li><a href="https://www.linkedin.com/in/charilaos-giannopoulos/" class="bi bi-linkedin" target="_blank"><br><span class="label">Linkedin</span></a></li>
-            <li><a href="https://www.instagram.com/betweenwinds/" class="bi bi-instagram" target="_blank"><br><span class="label">Instagram</span></a></li>
-            <li><a href="mailto:webdevcharilaosg" class="bi bi-envelope-open-heart" target="_blank"><br><span class="label">Email</span></a></li>
-        </ul>
-    </footer>
+				<div class="links">
+					<div class="ls">
+						<button>
+							<i class="bi bi-plus-circle-fill"></i>
+							Learn Javascript
+						</button>
 
-    <script src="script.js"></script>
-</body>
+						<ul id="js-1">
+							<li>
+								<a
+									href="https://eloquentjavascript.net/index.html"
+									title="eloquentjavascript.net/index.html"
+									>Eloquent Javascript book</a
+								>
+							</li>
+							<li>
+								<a
+									href="http://domenlightenment.com/"
+									title="domenlightenment.com"
+									>Dom enlightenment book</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.freecodecamp.org/news/es5-to-esnext-heres-every-feature-added-to-javascript-since-2015-d0c255e13c6e/"
+									title="freecodecamp.org/news/es5-to-esnext-heres-every-feature-added-to-javascript-since-2015-d0c255e13c6e"
+									>ES5 to ESNext</a
+								>
+							</li>
+
+							<li><a href="" title=""></a></li>
+						</ul>
+					</div>
+
+					<div class="ls">
+						<button>
+							<i class="bi bi-plus-circle-fill"></i>
+							Additional study material
+						</button>
+
+						<ul id="js-2">
+							<li>
+								<a
+									href="https://www.sitepoint.com/mastering-javascripts-this-keyword/"
+									title="sitepoint.com/mastering-javascripts-this-keyword"
+									>The keyword "this"</a
+								>
+							</li>
+							<li>
+								<a
+									href="http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html"
+									title="adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html"
+									>Intro to IIFEs</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.codingame.com/playgrounds/6516/closures-in-javascript-for-beginners"
+									title="codingame.com/playgrounds/6516/closures-in-javascript-for-beginners"
+									>Closures for beginners</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="ls">
+						<button>
+							<i class="bi bi-plus-circle-fill"></i>
+							Bundlers and compilers
+						</button>
+
+						<ul id="js-3">
+							<li>
+								<a
+									href="https://www.youtube.com/watch?v=IZGNcSuwBZs"
+									title="www.youtube.com/watch?v=IZGNcSuwBZs"
+									>Webpack 5 Crash Course</a
+								>
+							</li>
+
+							<li>
+								<a href="https://docs.npmjs.com/" title="docs.npmjs.com"
+									>npm Docs</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="ls">
+						<button>
+							<i class="bi bi-plus-circle-fill"></i>
+							Cheatsheet and more
+						</button>
+
+						<ul id="js-4">
+							<li>
+								<a
+									href="https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf"
+									title="websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf"
+									>Javascript cheat sheet</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://htmlcheatsheet.com/js/"
+									title="htmlcheatsheet.com/js"
+									>Javascript cheat sheet #2</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://thefullstack.xyz/solid-javascript/"
+									title="thefullstack.xyz/solid-javascript"
+									>Be a SOLID JS dev</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://standardjs.com/rules.html"
+									title="standardjs.com/rules.html"
+									>Standard JS rules to follow</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<br /><br /><br />
+
+		<footer id="footer">
+			<small
+				>Created with love.. <br />
+				by Charilaos Giannopoulos</small
+			>
+			<ul class="icons">
+				<li>
+					<a href="https://github.com/Amefurikozo" class="bi bi-github"
+						><br /><span class="label" target="_blank">Github</span></a
+					>
+				</li>
+				<li>
+					<a
+						href="https://www.linkedin.com/in/charilaos-giannopoulos/"
+						class="bi bi-linkedin"
+						target="_blank"
+						><br /><span class="label">Linkedin</span></a
+					>
+				</li>
+				<li>
+					<a
+						href="https://www.instagram.com/betweenwinds/"
+						class="bi bi-instagram"
+						target="_blank"
+						><br /><span class="label">Instagram</span></a
+					>
+				</li>
+				<li>
+					<a
+						href="mailto:webdevcharilaosg"
+						class="bi bi-envelope-open-heart"
+						target="_blank"
+						><br /><span class="label">Email</span></a
+					>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
 </html>
