@@ -12,3 +12,5 @@ Anyway, the website so far is split into three sections.
 
 I've learned so many things since the day I finished this. Things like new technologies, techniques, amazing tools, as well as more advanced ways to do things and better practices. Been like 5-6 months since.  
 Still, it's probably a decent enough place to start reading what I did, and end up building something simple and nice.  
+
+https://mylittlewebdevhandbook.netlify.app/
